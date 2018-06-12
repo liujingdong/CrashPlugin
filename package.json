@@ -1,0 +1,21 @@
+{
+  "name": "crazy-dong-plugin-crash-plugin",
+  "version": "1.0.0",
+  "description": "android crash report",
+  "cordova": {
+	"id":"org.cordova.CrashPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liujingdong/CrashPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "liujingdong",
+  "license": "ISC"
+}

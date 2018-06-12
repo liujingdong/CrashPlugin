@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="org.cordova.CrashPlugin" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CrashPlugin</name>
+    <description>android Crash Plugin</description>
+
+    <js-module name="CrashPlugin" src="www/CrashPlugin.js">
+        <clobbers target="CrashPlugin"/>
+    </js-module>
+
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CrashPlugin">
+                <param name="android-package" value="custom.cordova.crash.CrashPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CrashPlugin.java" target-dir="src/org/apache/cordova/crashplugin"/>
+    </platform>
+</plugin>
