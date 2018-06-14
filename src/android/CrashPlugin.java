@@ -129,6 +129,9 @@ public class CrashPlugin extends CordovaPlugin {
     //系统定制商
     printWriter.print("品牌:");
     printWriter.println(Build.BRAND);
+    //手机型号
+    printWriter.print("手机型号:");
+    printWriter.println(Build.MODEL);
 
     //App信息
     try {
